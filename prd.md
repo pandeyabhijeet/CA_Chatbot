@@ -102,6 +102,12 @@ Pages source
 Repo Settings > Pages
 GitHub Actions
 
+
+App reads the key with import.meta.env.VITE_GEMINI_API_KEY.
+.env.local is used for local development and is listed in .gitignore.
+Workflow file: .github/workflows/deploy.yml, triggered on push to main and workflow_dispatch.
+Workflow permissions: contents: read, pages: write, id-token: write.
+
 flowchart LR
 
   A[Push to main] --> B[Checkout + Node 20]

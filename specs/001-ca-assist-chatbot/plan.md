@@ -108,9 +108,9 @@ index.html
 public/
 └── favicon.svg         # Local static app mark; no external image/font requests
 vite.config.ts
- tsconfig.json
- tsconfig.app.json
- tsconfig.node.json
+tsconfig.json
+tsconfig.app.json
+tsconfig.node.json
 eslint.config.js
 package.json
 .env.local              # local-only, git-ignored; empty until rotated/restricted key is set

@@ -15,10 +15,10 @@ Pages, with no backend, database, or serverless functions.
 - Suggested questions for common Indian tax and accounting topics.
 - Preview mode without a configured key; live requests use the fixed Gemini model when configured.
 - Thinking, safe error, retry, timeout, and rate-limit UI states are available for the approved
-  client contract and test doubles.
+	client contract and test doubles.
 - Markdown replies support lists, emphasis, and tables without raw-HTML rendering.
 - Responsive layout, keyboard-visible focus, screen-reader announcements, and persistent disclaimer:
-  **For general information only. Consult a qualified CA for advice.**
+	**For general information only. Consult a qualified CA for advice.**
 
 ## Technology
 

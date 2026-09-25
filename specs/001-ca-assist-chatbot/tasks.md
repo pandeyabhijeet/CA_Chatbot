@@ -20,7 +20,7 @@ implementation and testing of each story.
 ## Format: `[ID] [P?] [Story] Description`
 
 - **[P]**: Can run in parallel (different files, no dependencies)
-- **[Story]**: Which user story this task belongs to (e.g., US1, US2)
+- **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3, US4)
 - File paths are relative to the repository root
 
 ## Path Conventions
@@ -95,8 +95,8 @@ user story depends on.
       `systemInstruction`; read the key only from the env; use `x-goog-api-key` header; enforce a
       30-second `AbortController` timeout; map HTTP 429, aborts, generic failures, malformed bodies,
       and success to safe typed results. It returns `not_enabled` without fetch when the key is empty.
-      The owner accepts the browser-bundle exposure for local and Pages; keys pasted into chat must be
-      treated as compromised and rotated. Only rotated Gemini-restricted keys may be configured.
+      The owner accepts the browser-bundle exposure for local and Pages; keys pasted into chat must
+      be treated as compromised and rotated. Only rotated Gemini-restricted keys may be configured.
 - [X] T015 Implement `useConversation` in `src/hooks/useConversation.ts`: a reducer implementing the
       `data-model.md` state machine (`(none) → pending`, `pending → complete`,
       `pending → error(timeout|rate_limit|request_error)`, `error → pending` on Retry), plus
@@ -413,6 +413,7 @@ With multiple developers:
 ## Notes
 
 - [P] tasks = different files, no dependencies.
+- [Story] label maps task to specific user story for traceability.
 - Live Gemini responses are enabled only when `VITE_GEMINI_API_KEY` is non-empty. The owner accepted
       local and public Pages exposure. T014, T019, T030, and T031 are implemented and tested with fake
       credentials/mocked fetch; no live provider call was made during those tests.
